@@ -1,0 +1,51 @@
+clase de git 
+
+
+clase 8
+---------------------------------------------------------------------------------------------------
+1--- inicializa ptoyecto ==> git init 
+2--- agregar archivo al repositoro ==> git add .
+3--  git commit para agregar el archivo al repositorio por defecto la rama es master 
+4--- remover archivo del repositorio ==> 
+5 --- git checkaout trae la version final del repositorio y la traes a tu carpeta 
+
+---------------------------------------------------------------------------------------------------
+
+clase 9 
+¿ que es un Branch(rama) y como funciona un marge em git ?
+
+git es una base de datos muy precisa con todos los cambios y crecimiento qu ha tenido nuestro proyecto. los commits son la unica forma de tener un registro de los cambios. pero las ramas amplifican mucho mas el poder de git.
+
+Todos los commits se aplican sobre una rama. por defecto, siempre empezamos en la rama master(pero puedes cambiarle el nonbre si no te gusta) y creamos nuevas rama, a partir de esta,paa crear fljos de trabajo independiente.
+
+crear una nueva rama se trata de copiar un commit(de cualquier rama), pasarlo a otro lado(a otra rama) y continuar el trabajo de una parteepecifica de nuestro proyecto sin afectar el flujo de trabajo principal (que continua en la rama master o rama principal).
+
+los equipos de desarrollo tienen un estandar: todo lo que este en la rama master va a produccin, las nuevas features, caracteristicas y experiments van aen una rama  "development" para unirse a master cuando esten definitivamente lista  y los issues o errores se solcionan en una rama "hotfix" para unirse a master tan pronto como sea posible.
+
+crear una nueva rama lo conocemos como checkout. unir dos ramas lo conocemos como Merge.
+
+------------------------------------------------------------------------------------------------------------
+clase 10
+
+Recuerda que Git está optimizado para trabajar en equipo, por lo tanto, debemos darle un poco de información sobre nosotros. No debemos hacerlo todas las veces que ejecutamos un comando, basta con ejecutar solo una sola vez los siguientes comandos con tu información:
+
+git config --global user.email "tu@email.com"
+git config --global user.name "Tu Nombre"
+
+Pasos
+git init → Para inicializar el repositorio git y el staged
+git add nombre_del_archivo.txt → Enviar el archivo al staged
+git status → ver el estado de mis archivos,
+git rm --cached nombre.txt → para eliminar el archivo del stage area(ram)
+git rm nombre_del_archivo.txt → para eliminar del repositorio
+
+
+clase 14 
+
+-------------------------------------------------------------------------------------------------------------
+ git clone url_del_servidor_remoto: Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git.
+    git push: Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
+    git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
+    git merge: También usamos el comando git fetch con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+    git pull: Básicamente, git fetch y git merge al mismo tiempo.
+
