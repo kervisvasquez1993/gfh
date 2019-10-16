@@ -49,3 +49,23 @@ clase 14
     git merge: También usamos el comando git fetch con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
     git pull: Básicamente, git fetch y git merge al mismo tiempo.
 
+
+clase 15 
+
+------------------------------------------------------------------------------------------------------------
+
+introduccion a las ramas o bramche de git 
+
+las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal.
+esto porque queremos trabajar en una parte especifica de la aplicacion o sinmplemente experimentar.
+
+la cabecera o head representa la rama y el commit de esa rama donde estamos trabajando. por defecto, esta cabecera aparecera en el ultimo commit de nuestra rama principal. pero podemos cambiarla al crear una rama 
+(git branch rama, git chackout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos de 
+
+clase 16 
+------------------------------------------------------------------------------------------------------
+
+fusionar rama con git marge 
+
+el comando git merge nos permite crear un nuevo commit con la combinacion de dos ramas(la rama donde nos encontramos cuando ejecutamos el comando y la rama que indicamos despues del comando)
+
